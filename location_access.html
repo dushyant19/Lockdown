@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<style>
+#button{
+    text-align: center;
+    position:relative;
+}
+button{
+    position:fixed;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0 auto;
+    bottom: 10px;
+    width:50%;
+    border-radius: 25px;
+    background-color:#7A7A7A;
+    border:1px solid #9C9C9C;
+    height:40px;
+    font-size: 20px;
+}
+button:hover{
+    opacity:0.8;
+}
+button:focus, text{
+            outline: none !important;
+        }
+</style>
+<body>
+    <div class = "container" style="margin-top:50px; text-align: center; color:#6F6F6F">
+        <h2>Allow Location access!!</h2>
+    </div>
+    <div class = "container" id="button">
+        <button>Next</button>
+    </div>
+</body>
+</html>

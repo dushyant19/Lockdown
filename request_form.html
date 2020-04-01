@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        ::placeholder{
+            font-size: 25px;
+            color:#9C9C9C;
+        }
+        button{
+            text-align:center;
+            width:auto;
+            height:auto;
+            border:1px solid #6F6F6F;
+            border-radius:14px;
+            background-color: white;
+            color:#6F6F6F;
+        }
+        input[type="text"]{
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-bottom:1px solid grey;
+            width:80%;
+            margin-top: 25px;
+        }
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input:focus, text{
+            outline: none !important;
+        }
+        input[type="submit"]{
+            width:50%;
+            border-radius: 25px;
+            background-color:#7A7A7A;
+            border:1px solid #9C9C9C;
+            height:40px;
+            font-size: 20px;
+            margin-top:85px;
+        }
+        select{
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-bottom:1px solid grey;
+            width:80%;
+            margin-top: 25px;
+        }
+        select:focus, text{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container" style="margin-left:8%;margin-top:50px; text-align: left; color:#6F6F6F;">
+        <h2><b>Create Request</b></h2>
+    </div>
+    <div class = "container" style="margin-top: 70px; text-align: center; color: #6F6F6F;">
+        <h3>Category</h3>
+    </div>
+    <div class = "container" style="text-align:center; margin-top:30px;">
+        <button>Fruit</button>
+        <button>meds</button>
+        <button>vegies</button>
+        <button>grocery</button>
+    </div>
+    <div class = "container" style="margin-top: 50px; text-align: center;">
+        <form method="POST">
+            <input type="text" placeholder="ITEM Name"><br>
+            <input type="text" placeholder="Comment"><br>
+            <select id="urgency">
+                <option value = "Low">Urgency: Low</option>
+                <option value = "High">Urgency: High</option>
+            </select>
+            <input type="text" placeholder="Time"><br>
+            <input type="submit" value="Create Request">
+        </form>
+    </div>
+</body>
+</html>
